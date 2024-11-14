@@ -2,9 +2,10 @@
 
 //undefined value in variable
 
-// When a variable is declared or not initialized but not assigned with any value then JavaScript automatically assigns it to an “undefined” value.
+// When a variable is declared  but not assigned with any value then JavaScript automatically assigns it to an “undefined” value.
 
-
+// Undefined
+// In JavaScript, a variable without a value, has the value undefined. The type is also undefined.
 let variable;
 console.log(variable);
 
@@ -35,3 +36,4 @@ if(typeof y === 'undefined'){
 }else{
     console.log("Y is already defined");
 }
+
