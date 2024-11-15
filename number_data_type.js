@@ -76,4 +76,15 @@ console.log(notANum);
 //Big Int
 
 //Number have 64 bit so maximum it can represents number is 2^53 - 1
+// A BigInt value, also sometimes just called a BigInt, is a bigint primitive, created by appending n to the end of an integer literal, or by calling the BigInt() function (without the new operator) and giving it an integer value or string value.
 
+//i.e.
+const previouslyMaxSafeInteger = 9007199254740991n;
+ const alsoHuge = BigInt(9007199254740991);
+
+//  A BigInt value can also be wrapped in an Object:
+typeof Object(1n) === "object"; // true
+
+// A BigInt value is not strictly equal to a Number value, but it is loosely so:
+0n === 0; // false //data type not same
+0n == 0; // true  // value same 
